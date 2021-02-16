@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         } else
             Toast.makeText(this, "Welcome back", Toast.LENGTH_LONG).show();
         readFromSharedPreferences();
-        sharedPreferences.edit().putBoolean("FIRST_TIME", true).apply();
+//        sharedPreferences.edit().putBoolean("FIRST_TIME", true).apply();
 
 
     }

@@ -94,8 +94,8 @@ public class LoginActivity extends AppCompatActivity {
         encryptedSharedPreferences.edit().putString("PASSWORD", password)
                 .apply();
 
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-        setResult(707, intent);
+        //  Navigation to the MainActivity
+        setResult(707, new Intent(LoginActivity.this, MainActivity.class));
         finish();
 
     }
