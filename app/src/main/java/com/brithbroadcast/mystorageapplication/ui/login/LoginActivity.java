@@ -27,19 +27,18 @@ public class LoginActivity extends AppCompatActivity {
 
     // Shared Preferences Key
     private final String PREFERENCE_KEY = "LOGIN_PREF";
-    @BindView(R.id.username_edittext)
-    public EditText usernameEditText;
-    @BindView(R.id.password_edittext)
-    public EditText passwordEditText;
     // Shared Preferences
     private SharedPreferences sharedPreferences;
-
-
-    // |--> UI <--|
     // Encrypted Shared Preferences
     private SharedPreferences encryptedSharedPreferences;
     // Encryption Key
     private MasterKey masterKey;
+
+    // |--> UI <--|
+    @BindView(R.id.username_edittext)
+    public EditText usernameEditText;
+    @BindView(R.id.password_edittext)
+    public EditText passwordEditText;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
